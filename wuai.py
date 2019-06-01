@@ -30,9 +30,9 @@ for index in range(page_Maxnumber):
     html = re.findall(zz, page, re.S)  # re.S表示.可以代表\n
     # print(html)
     for line in html:
-        html_link = re.findall(zz_mData, line, re.S)   #举例 ('thread-739688-1-1.html', '【Python】萌新跟我来入门Python爬虫')]
+        html_link = re.findall(zz_mData, line, re.S)  
         #标题
-        title  = html_link[0][1]# '【Python】萌新跟我来入门Python爬虫'
+        title  = html_link[0][1]
         #链接
         link = html_link[0][0]# link = 'thread-739688-1-1.html'
         print('%d、%s https://www.52pojie.cn/%s'%(title_naumber,title,link))
