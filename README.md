@@ -1,2 +1,2 @@
-# wuai-
+# wuai
 
